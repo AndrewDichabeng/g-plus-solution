@@ -1,0 +1,11 @@
+Things wrong with the code :
+
+- The method 'public static void average(int kfc[])' doesn't compute the average of the integers or return the value.
+    -   Check the return value of 'void'.
+
+- When receiving input from the keyboard it is best not to declare variables within a looping statement (not memory efficient).
+    -   Check the lines 'int num1 = input.nextInt();'
+
+- There is a type mismatch in the last line 'System.out.printf("The average is %.2f", array[i]);'
+    -   Note that array[i] is not a floating number.
+    -   This seems to be main cause of your error.
